@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FORM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script>
+    function sub() {
+      alert("Submitted Successfully");
+    }
+  </script>
+</head>
+<body>
+  <div id="form_body">
+    <form>
+      <label for="name">NAME:</label>
+      <input type="text" id="name" />
+
+      <label for="mailid">Email:</label>
+      <input type="email" id="mailid" />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" />
+
+      <label for="phone_number">Mobile No:</label>
+      <input type="tel" id="phone_number" />
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="5" cols="30" maxlength="80"></textarea>
+
+      <div id="gender-options">
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">MALE</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">FEMALE</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">OTHERS</label>
+      </div>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" />
+
+      <div id="terms">
+        <input type="checkbox" id="terms" value="kataa">
+        <label for="terms">I agree to all the Terms & Conditions</label>
+      </div>
+
+      <div id="button">
+        <button type="button" onclick="sub()">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+  <!-- <div id="success-message"></div>
+  <script>
+    const submitButton = document.querySelector('button[type="button"]');
+    submitButton.addEventListener('click', function () {
+      const successMessage = document.getElementById('success-message');
+      successMessage.textContent = 'Form submitted successfully!';
+    });
+  </script> -->
+</body>
+</html>
