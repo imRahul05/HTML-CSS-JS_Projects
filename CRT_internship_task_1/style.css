@@ -1,0 +1,174 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  font-family: "Open Sans";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  animation: gradientAnimation 10s infinite alternate-reverse;
+}
+
+#resume-template {
+  display: none;
+}
+
+.background {
+  background-color: #3a9aff;
+}
+
+.img-logo {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+p {
+  color: white;
+}
+
+.name1,
+.address1 {
+  font-size: 20px;
+}
+
+.email1,
+.phn1 {
+  font-size: 18px;
+}
+
+.personal {
+  padding-bottom: 10px;
+}
+
+.hr-row {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  max-width: fit-content;
+}
+
+.social-head {
+  color: white;
+  font-weight: bold;
+}
+
+.social {
+  text-align: left;
+  padding-top: 20px;
+}
+
+#resume-form{
+  background-color: rgba(164, 202, 200, 0.8);
+
+
+  transition: background-color 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+.btn-primary {
+  color: #02040e;
+  padding: 15px 0;
+  border-radius: 100px;
+  background: linear-gradient(to right, #6baef1, #3a9aff);
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  width: 150px;
+  margin-left: -50px;
+  margin-top: 25px;
+  transition: background 0.5s ease-in-out, transform 0.3s ease;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-primary:first-child {
+  margin-top: 25px;
+}
+
+.btn-primary:last-child {
+  margin-top: 50px;
+  margin-left: 75px;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #1c2938, #3a9aff);
+  transform: scale(1.05);
+  color: #6baef1;
+}
+
+.text-center {
+  color: #000;
+}
+
+.txt {
+  font: 2.5rem sans-serif;
+}
+
+.btn-add {
+  color: #02040e;
+  padding: 15px 0;
+  border-radius: 100px;
+  background: linear-gradient(to right, #6baef1, #3a9aff);
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  width: 150px;
+  margin-left: -50px;
+  margin-top: 25px;
+  transition: background 0.5s ease-in-out, transform 0.3s ease;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: -10px;
+}
+
+.btn-add:hover {
+  background: linear-gradient(to right, #1c2938, #3a9aff);
+  transform: scale(1.05);
+  color: #6baef1;
+}
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(to right, #3494e6, #ec6ead);
+    }
+    20% {
+        background: linear-gradient(to right, #45a049, #f8b400);
+    }
+    40% {
+        background: linear-gradient(to right, #ec6ead, #3494e6);
+    }
+    60% {
+        background: linear-gradient(to right, #f8b400, #45a049);
+    }
+    80% {
+        background: linear-gradient(to right, #3494e6, #ec6ead);
+    }
+    100% {
+        background: linear-gradient(to right, #ec6ead, #45a049);
+    }
+}

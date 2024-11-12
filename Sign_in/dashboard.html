@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+        }
+        .parentA{
+            justify-content: left;
+        }
+        .child{
+            display: flex;
+            padding: 30px;
+            list-style: none;
+        }
+        a{
+            margin: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>Dashboard</h1>
+        <div class="parentA">
+            <ul class="child">
+                <li><a href="/dashboard.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <button onclick="handleLogout()">Logout</button>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function handleLogout(){
+            window.location.href='/'
+        }
+    </script>
+</body>
+</html>
