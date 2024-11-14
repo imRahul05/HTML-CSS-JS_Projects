@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>javascript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            display: inline-block;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0074D9;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script type="text/javascript">
+        function generateFibonacciNumbers() {
+            var n = parseInt(prompt("Enter the number of Fibonacci numbers to generate:"));
+            var fibonacciNumbers = [0, 1];
+
+            for (var i = 2; i < n; i++) {
+                fibonacciNumbers[i] = fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2];
+            }
+
+            var output = "First " + n + " Fibonacci numbers:\n" + fibonacciNumbers.join(", ");
+            alert(output);
+        }
+        function displayNumberAndSquares() {
+            var n = parseInt(prompt("Enter a number (n) to display the table of numbers and their squares from 1 to n:"));
+            var table = "Number__Square\n";
+
+            for (var i = 1; i <= n; i++) {
+                table += i + "----------->" + (i * i) + "\n";
+            }
+
+            alert("Table of numbers and their squares:\n" + table);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Lab_03 Problems</h1>
+        <div class="button-container">
+            <button onclick="generateFibonacciNumbers()">Fibonacci Generator</button>
+            <button onclick="displayNumberAndSquares()">Display Number and Square Generator</button>
+        </div>
+    </div>
+</body>
+</html>

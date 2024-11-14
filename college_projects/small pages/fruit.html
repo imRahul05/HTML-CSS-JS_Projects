@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* /* input[type="checkbox"] {
+            margin-right: 5px;
+        } */
+
+        /* input[type="number"] {
+            width: 50px;
+        }  */
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0074D9;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+      let appc = 0,
+        orc = 0,
+        bnc = 0;
+     function app() {
+        let checked = document.getElementById("apple").checked;
+        if (checked) {
+          appc = 0.59 * parseFloat(document.getElementById("appleq").value);
+        } else {
+          appc = 0;
+        }
+        console.log(appc);
+      }
+      function or() {
+        let checked = document.getElementById("orange").checked;
+        if (checked) {
+          orc = 0.49 * parseFloat(document.getElementById("orangeq").value);
+        } else {
+          orc = 0;
+        }
+        console.log(orc);
+      }
+
+      function bn() {
+        let checked = document.getElementById("banana").checked;
+        if (checked) {
+          bnc = 0.59 * parseFloat(document.getElementById("bananaq").value);
+        } else {
+          bnc = 0;
+        }
+        console.log(bnc);
+      }
+      function dis() {
+        app();
+        bn();
+        or();
+        alert(("your total cost $"+ (bnc + appc + orc)*4.5));
+      }
+    </script>
+</head>
+<body>
+    <h1>Fruit Price Calculator</h1>
+
+    <form>
+        <label>
+            <input type="checkbox" id="apple" onclick="app()" />
+            Apple (59 cents) Quantity
+            <input type="number" id="appleq" />
+        </label>
+        <br />
+
+        <label>
+            <input type="checkbox" id="orange" onclick="or()" />
+            Orange (49 cents) Quantity
+            <input type="number" id="orangeq" />
+        </label>
+        <br />
+
+        <label>
+            <input type="checkbox" id="banana" onclick="bn()" />
+            Banana (39 cents) Quantity
+            <input type="number" id="bananaq" />
+        </label>
+        <br />
+
+        <button id="submit" onclick="dis()">Calculate Total</button>
+    </form>
+</body>
+</html>

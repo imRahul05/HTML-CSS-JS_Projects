@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venice</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .slider {
+        width:100%;
+        height: 500px;
+        background-color:whitesmoke;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="venice">
+      <div
+        id="head" style="background-image: ven.jpg;background: linear-gradient(to right,rgb(211, 131, 18),rgb(168, 50, 121));">
+        <h1 style="color: aquamarine;">Vencie: A Dream</h1>
+      </div>
+      <div id="section1">
+        <div class="img">
+          <img src="vencice1.jpeg" alt="veniceimage" />
+        </div>
+        <div id="about">
+          <p>
+            <i>
+              <h2>About</h2>
+              The centuries-old buildings and bridges, the quiet canals and
+              cobblestone alleyways, the labyrinth of eye-catching islands—it
+              doesn’t get dreamier than Venice. And while the capital of the
+              Veneto is undoubtedly a stunner, it’s also a very real city. The
+              Grand Canal and Piazza San Marco are the centre of tourist
+              activity, and the surrounding winding streets are filled with
+              stylish cafes and gelaterias, souvenir shops and one-off
+              boutiques, as well as gorgeous Renaissance palaces and Gothic
+              churches. Once you’ve ticked off the must-see landmarks (don’t
+              miss the Campanile and Gallerie dell'Accademia), get to know the
+              lesser known neighbourhoods like Cannaregio, Dorsoduro, and
+              Castello where locals crowd lowkey trattorias for afternoon
+              aperitivo.
+            </i>
+          </p>
+        </div>
+      </div>
+      <div class="slider">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <div class="image-container">
+          <img src="img1.jpeg" class="slide" width="500" height="300" />
+          <img src="vencice1.jpeg" class="slide" width="500" height="300" />
+          <img src="img2.jpg" class="slide" width="500" height="300" />
+        </div>
+        <div class="buttons">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+  </body>
+</html>
