@@ -1,0 +1,19 @@
+.one,.two,.three,.four{
+    height: 150px;
+    width: 150px;
+    border: 2px solid red;
+    margin: 2px;
+} 
+
+.box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
