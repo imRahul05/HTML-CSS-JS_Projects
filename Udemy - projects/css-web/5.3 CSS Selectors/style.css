@@ -1,0 +1,10 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+  color: blue;
+}
+p {
+  color: brown;
+}
+/* Write your CSS below, don't change the rules above. */
