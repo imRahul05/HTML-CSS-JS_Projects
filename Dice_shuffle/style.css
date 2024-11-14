@@ -1,0 +1,76 @@
+.body{
+    margin: auto;
+}
+.box{
+    display: flex;
+}
+.one{
+    padding-right: 50px;
+    padding-left: 30px;
+    height: 250px;
+    width: 250px;
+}
+.two{
+    padding-left: 50px;
+    height: 250px;
+    width: 250px;
+}
+.dice1{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    border-radius: 7px;
+    border: 2px solid black;
+    grid-template-columns: auto auto;
+    display: grid;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.dice2{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(0, 110, 146, 0.819);
+    border-radius: 5px;
+    border: 2px solid black;
+    grid-template-columns: auto auto;
+    display: grid;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.b1{
+    height: 30px;
+    width: 30px;
+    background-color: whitesmoke;
+    margin: 5px;
+    border-radius: 50%;
+    place-self: centre;
+}
+.btn{
+    height: 30px;
+    width: 114px;
+    margin: auto;
+}
+
+
+.dice3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(47, 46, 46);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.grid1{
+    position: absolute;
+    left: 282px;
+    top:300px;
+}
+.b2{width: 30px;
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    place-self: center;}
